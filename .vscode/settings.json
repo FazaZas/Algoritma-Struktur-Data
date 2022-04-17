@@ -1,0 +1,8 @@
+{
+     "files.associations": {
+          "xstring": "cpp",
+          "ostream": "cpp",
+          "stdio.h": "c",
+          "4-menghitung-faktorial-menggunakan-rekursif": "c"
+     }
+}
