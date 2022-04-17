@@ -1,0 +1,20 @@
+#LINK LIST
+----------------------------------------------------------------
+link list terdiri atas elemen"(Node) individu yang masing" dihubungkan
+dengan pointer tunggal
+
+     data    next
+-------------------
+|		|	|---> ?
+|		|	|
+-------------------
+
+setiap elemen terdiri atas 2 bagian
+1. data informasi yang diberikan
+2. pointer yang menyimpan alamat elemen selanjutnya
+
+
+
+#INSERT 
+---------------------------------------------------------------
+menambahkan sebuah simpul baru ke dalam suatu linked list.

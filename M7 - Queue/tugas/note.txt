@@ -1,0 +1,13 @@
+queue = qyu
+
+1. definisi queue
+   - merupakan abstract data type  yang menerapkan konsep antrian
+   - merupakan konsep first in first out (FIFO)
+   - data yang disimpan pertama akan diambil terlebih dahulu
+
+2. karakteristik queue
+   - Elemen Antrian yaitu data yang terdapat di elemen antrian
+   - Elemen Queue : A,B,C,D, dan D.
+   - Front : penunjuk elemen terdepan dari antrian
+   - Rear  : penunjuk elemen terakhir dari antrian
+   - Count : jumlah elemen antrian
