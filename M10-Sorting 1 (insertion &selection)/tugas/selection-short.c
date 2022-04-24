@@ -1,47 +1,72 @@
-// Selection Sort
 #include <stdio.h>
 
-void swap(int *xp, int *yp)
-{
-     int temp = *xp;
-     *xp = *yp;
-     *yp = temp;
-}
+#define MAX 100
 
-void selectionSort(int arr[], int n)
-{
-     int i, j, min_idx;
-
-     // One by one move boundary of unsorted subarray
-     for (i = 0; i < n - 1; i++)
-     {
-          // Temukan elemen minimum dalam array yang tidak disortir
-          min_idx = i;
-          for (j = i + 1; j < n; j++)
-               if (arr[j] < arr[min_idx])
-                    min_idx = j;
-
-          // Tukar elemen minimum find dengan elemen pertama
-          swap(&arr[min_idx], &arr[i]);
-     }
-}
-
-/* Fungsi untuk mencetak array */
-void printArray(int arr[], int size)
-{
-     int i;
-     for (i = 0; i < size; i++)
-          printf("%d ", arr[i]);
-     printf("\n");
-}
-
-// Driver program untuk menguji fungsi di atas
 int main()
 {
-     int arr[] = {64, 25, 12, 22, 11};
-     int n = sizeof(arr) / sizeof(arr[0]);
-     selectionSort(arr, n);
-     printf("Sorted array: \n");
-     printArray(arr, n);
+     int arr[], limit;
+     int i, j, temp, position;
+
+     printf("Enter total number of elements: ");
+     scanf("%d", &limit);
+
+     /*Read array*/
+     printf("Enter array elements: \n");
+     for (i = 0; i < limit; i++)
+     {
+          printf("Enter element %3d: ", i + 1);
+          scanf("%d", &arr[i]);
+     }
+
+     /*sort elements in Ascending Order*/
+     for (i = 0; i < (limit); i++)
+     {
+          position = i;
+          for (j = i + 1; j < limit; j++)
+          {
+               if (arr[position] > arr[j])
+               {
+                    position = j;
+               }
+               if (position != i)
+               {
+                    temp = arr[i];
+                    arr[i] = arr[position];
+                    arr[position] = temp;
+               }
+          }
+     }
+
+     printf("Array elements in Ascending Order:\n");
+     for (i = 0; i < limit; i++)
+          printf("%d ", arr[i]);
+
+     printf("\n");
+
+     /*sort elements in Descending Order*/
+     for (i = 0; i < (limit); i++)
+     {
+          position = i;
+          for (j = i + 1; j < limit; j++)
+          {
+               if (arr[position] < arr[j])
+               {
+                    position = j;
+               }
+               if (position != i)
+               {
+                    temp = arr[i];
+                    arr[i] = arr[position];
+                    arr[position] = temp;
+               }
+          }
+     }
+
+     printf("Array elements in Descending Order:\n");
+     for (i = 0; i < limit; i++)
+          printf("%d ", arr[i]);
+
+     printf("\n");
+
      return 0;
 }
