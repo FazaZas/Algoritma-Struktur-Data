@@ -4,6 +4,7 @@
           "ostream": "cpp",
           "stdio.h": "c",
           "4-menghitung-faktorial-menggunakan-rekursif": "c",
-          "xlocale": "c"
+          "xlocale": "c",
+          "time.h": "c"
      }
 }
