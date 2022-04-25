@@ -5,7 +5,6 @@ int main()
      // Inisialisasi array
      int arr[] = {3, 10, 4, 6, 8, 9, 7, 2, 1, 5};
      int temp = 0;
-
      // Hitung panjang array arr
      int length = sizeof(arr) / sizeof(arr[0]);
 
@@ -34,9 +33,7 @@ int main()
                }
           }
      }
-
      printf("\n");
-
      // Menampilkan elemen array setelah menyortir
      printf("5 elemen pertama terurut Ascending, dan 5 elemen terakhir acak: \n");
      for (int i = 0; i < length; i++)
@@ -59,7 +56,6 @@ int main()
      }
 
      printf("\n");
-
      // Menampilkan elemen array setelah menyortir
      printf("Semua elemen terurut ascending: \n");
      for (int i = 0; i < length; i++)

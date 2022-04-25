@@ -4,9 +4,8 @@ int main()
 {
      int arr[] = {3, 10, 4, 6, 8, 9, 7, 2, 1, 5};
      int temp = 0;
-
-     // Hitung panjang array arr
      int length = sizeof(arr) / sizeof(arr[0]);
+
      printf("\n");
      printf("INSERTION SORT \n");
      printf("-------------- \n");
